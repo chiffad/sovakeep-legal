@@ -136,7 +136,7 @@ the app's release notes.
 
 ## Contact
 
-Questions about privacy? Open an issue on our support tracker:
-<https://github.com/chiffad/sovakeep-legal/issues>.
+Questions about privacy? Email us at <sovakeep@gmail.com>, or open an issue on
+our support tracker: <https://github.com/chiffad/sovakeep-legal/issues>.
 
 [← Back](index.html)
