@@ -1,6 +1,6 @@
 # SovaKeep Privacy Policy
 
-**Last updated: 2026-07-02**
+**Last updated: 2026-07-03**
 
 SovaKeep is an envelope budgeting app. It is designed so that your financial
 data stays on your device. This policy explains exactly what data the app
@@ -9,21 +9,23 @@ handles, where it lives, and what we do — and don't do — with it.
 ## The short version
 
 - SovaKeep works fully offline. In the standard (local-only) app, **we collect
-  nothing**: no account, no analytics, no tracking, and your data never leaves
-  your device unless you export it yourself.
+  no personal data**: no account, no analytics, no tracking, and your financial
+  data never leaves your device unless you export it yourself.
 - **No ads. No data selling. Ever.** We do not show advertising, do not sell or
   share your data with anyone, and do not embed analytics or advertising SDKs.
-  Builds may include heavily privacy-restricted crash reporting for fixing bugs —
-  see "Crash reports and in-app feedback" for exactly what that means.
+  The app does include heavily privacy-restricted crash reporting so we can fix
+  bugs — see "Crash reports and in-app feedback" for exactly what that means.
 - A future version may offer an **optional** cloud-sync account. The section
   "Optional cloud sync" below applies only if that feature exists in your build
   and you explicitly turn it on.
 
 ## What we collect
 
-In the local-only app: **nothing**. SovaKeep has no servers receiving your
-data, requires no account, and does not need bank credentials — there is no
-bank linking at all.
+In the local-only app: **no personal data**. SovaKeep has no servers receiving
+your financial data, requires no account, and does not need bank credentials —
+there is no bank linking at all. The only thing that ever leaves your device
+automatically is the anonymized crash and diagnostic reporting described in
+"Crash reports and in-app feedback" below.
 
 ## What is stored on your device
 
@@ -61,28 +63,25 @@ or external server is involved in the local-only app.
 
 ## Crash reports and in-app feedback
 
-The app includes a crash-reporting library ([Sentry](https://sentry.io)).
-Whether it is active depends on the build you have:
-
-- **If the build has no reporting endpoint configured, the library is dormant:
-  it collects nothing and sends nothing, ever.** The app never touches the
-  network.
-- **If crash reporting is enabled in your build:** when the app crashes or hits
-  an internal error, a technical report is sent to Sentry so we can find and
-  fix the bug. Reports contain the device model, OS version, app version, and
-  technical details of the error. They are deliberately restricted: no personal
-  identifiers, no screenshots, no request headers or IP-based identification,
-  and monetary amounts are scrubbed from every report before it leaves the
-  device. A small sample of anonymous performance timings (how long screens
-  take to load) may also be sent. We use these reports solely to fix bugs and
-  never combine them with any other data.
+The App Store release of SovaKeep includes crash reporting
+([Sentry](https://sentry.io)), and it is enabled: when the app crashes or hits
+an internal error, a technical report is sent to Sentry so we can find and fix
+the bug. Reports contain the device model, OS version, app version, and
+technical details of the error. They are deliberately restricted: no personal
+identifiers, no screenshots, no request headers or IP-based identification,
+and monetary amounts are scrubbed from every report before it leaves the
+device. A small sample of anonymous performance timings (how long screens take
+to load) is also sent. We use these reports solely to fix bugs, never combine
+them with any other data, and cannot link them to you.
 
 **In-app feedback:** if you use the "Send feedback" option, your message,
 basic device/app information (model, OS version, app version), and a
 screenshot only if you explicitly attach one are delivered to us through the
-same error-reporting service. We use it solely to handle your feedback. In
-builds where reporting is disabled, the feedback form cannot deliver messages —
-use the contact channel below instead.
+same error-reporting service. We use it solely to handle your feedback.
+
+Some builds (development and testing) have no reporting endpoint configured;
+there the library is dormant — it collects nothing and sends nothing, and the
+feedback form cannot deliver messages (use the contact channel below instead).
 
 ## Optional cloud sync
 
