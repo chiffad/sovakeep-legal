@@ -69,9 +69,10 @@ an internal error, a technical report is sent to Sentry so we can find and fix
 the bug. Reports contain the device model, OS version, app version, and
 technical details of the error. They are deliberately restricted: no personal
 identifiers, no screenshots, no request headers or IP-based identification,
-and monetary amounts are scrubbed from every report before it leaves the
-device. A small sample of anonymous performance timings (how long screens take
-to load) is also sent. We use these reports solely to fix bugs, never combine
+and monetary amounts are scrubbed from crash and error reports before they
+leave the device — structured data fields are removed outright, and amounts
+appearing in free-form text are removed on a best-effort basis. A small sample
+of anonymous performance timings (how long screens take to load) is also sent. We use these reports solely to fix bugs, never combine
 them with any other data, and cannot link them to you.
 
 **In-app feedback:** if you use the "Send feedback" option, your message,
